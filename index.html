@@ -3,23 +3,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twelve Tablets</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="EOTY POSTER.jpg" alt="Twelve Tablets Logo" class="logo">
-        <h1>Twelve Tablets</h1>
-        <p class="tagline">A Los Angeles–based production company</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-        </nav>
+        <div class="menu">
+            <button class="menu-button">☰</button>
+            <div class="dropdown-content">
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+        <img src="images/logo.png" alt="Twelve Tablets Logo" class="logo">
+        <input type="text" placeholder="Search..." class="search-box">
     </header>
+
     <main>
-        <h2>Welcome to Twelve Tablets</h2>
-        <p>We produce bold, compelling stories for film, TV, and more.</p>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <a href="images/EOTY.jpg" target="_blank">
+                    <img src="images/EOTY.jpg" alt="Employee of the Year Poster">
+                </a>
+                <p><strong>Written and Directed by Kadir Mayel</strong><br>
+                Starring Conner Downey</p>
+            </div>
+            <div class="project">
+                <h3>The Road</h3>
+                <div class="stills">
+                    <a href="images/TheRoad1.jpg" target="_blank"><img src="images/TheRoad1.jpg"></a>
+                    <a href="images/TheRoad2.jpg" target="_blank"><img src="images/TheRoad2.jpg"></a>
+                    <a href="images/TheRoad3.jpg" target="_blank"><img src="images/TheRoad3.jpg"></a>
+                    <a href="images/TheRoad4.jpg" target="_blank"><img src="images/TheRoad4.jpg"></a>
+                    <a href="images/TheRoad5.jpg" target="_blank"><img src="images/TheRoad5.jpg"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Phone: +1 747 466 5773</p>
+            <p>Instagram: <a href="https://instagram.com/kadir.mayel" target="_blank">@kadir.mayel</a></p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Twelve Tablets is a Los Angeles–based production company focused on film, television, commercials, and music videos.</p>
+        </section>
     </main>
 </body>
 </html>

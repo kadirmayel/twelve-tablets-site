@@ -1,39 +1,68 @@
 
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     background-color: #111;
     color: #fff;
 }
 header {
-    background-color: #1a1a1a;
-    padding: 20px;
-    text-align: center;
-}
-header .logo {
-    max-height: 150px;
-}
-nav a {
-    margin: 0 15px;
-    color: #0ff;
-    text-decoration: none;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-main {
-    padding: 20px;
-}
-.gallery img, .poster {
-    max-width: 100%;
-    margin: 10px 0;
-    border: 2px solid #444;
-}
-.gallery {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
 }
-.gallery img {
-    width: calc(25% - 10px);
+.logo {
+    height: 50px;
+}
+.menu {
+    position: relative;
+}
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 1;
+}
+.menu:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #444;
+}
+.search-box {
+    padding: 5px;
+    font-size: 16px;
+}
+.projects {
+    padding: 20px;
+}
+.project {
+    margin-bottom: 30px;
+}
+.project img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-bottom: 10px;
+}
+.stills img {
+    width: 100%;
+    max-width: 250px;
+    margin: 5px;
 }
